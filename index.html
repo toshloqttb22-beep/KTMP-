@@ -201,16 +201,6 @@
         }
      
         function saveAttendance(type) { // 'keldi' yoki 'ketdi'
-            // Янги функция: 8:00 дан keyin "keldi" ни блоклаш
-            if (type === 'keldi') {
-                const now = new Date();
-                const hours = now.getHours();
-                if (hours > 8) {
-                    alert('❌ 8:00 дан keyin "Keldi" ro\'yxatdan o\'tkazib bo\'lmaydi! Илтимос, иш вақти бошлангунча кутинг.');
-                    return;
-                }
-            }
-            
             document.getElementById('successMessage').style.display = 'none';
             document.getElementById('errorMessage').style.display = 'none';
             const employeeName = document.getElementById('employeeName').value.trim();
